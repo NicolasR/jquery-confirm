@@ -23,6 +23,10 @@
     "url": "https://github.com/craftpip/jquery-confirm/issues"
   },
   "scripts": {
+    "minify:js": "uglifyjs js/jquery-confirm.js --compress --mangle --warn --comments --output dist/jquery-confirm.min.js",
+    "minify:less": "lessc css/jquery-confirm.less css/jquery-confirm.css",
+    "minify:css": "postcss css/jquery-confirm.css --use autoprefixer --use cssnano > dist/jquery-confirm.min.css",
+    "build:dist": "npm run minify:js && npm run minify:less && npm run minify:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -32,6 +36,12 @@
     "alert",
     "dialog"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "less": "^4.1.3",
+    "postcss-cli": "^10.1.0",
+    "uglify-js": "^3.17.4"
+  }
 }
-
