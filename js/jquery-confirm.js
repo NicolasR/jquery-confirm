@@ -1,5 +1,6 @@
-/*!
- * jquery-confirm v3.3.4 (http://craftpip.github.io/jquery-confirm/)
+/**
+ * @license
+ * jquery-confirm v3.3.5 (http://craftpip.github.io/jquery-confirm/)
  * Author: Boniface Pereira
  * Website: www.craftpip.com
  * Contact: hey@craftpip.com
@@ -551,12 +552,9 @@
                 if(that.smoothContent){
                     var contentHeight = that.$content.outerHeight() || 0;
                     if(contentHeight !== prevContentHeight){
-
-                        // Commented out to prevent scroll to top when updating the content
-                        // (for example when using ajax in forms in content)
-                        // that.$contentPane.css({
-                        //     'height': contentHeight
-                        // }).scrollTop(0);
+                        that.$contentPane.css({
+                            'height': contentHeight
+                        });
                         prevContentHeight = contentHeight;
                     }
                     var wh = $(window).height();

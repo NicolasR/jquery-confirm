@@ -1,7 +1,7 @@
 ### ![jquery-confirm](https://raw.githubusercontent.com/craftpip/jquery-confirm/master/jquery-confirm.png "jquery-confirm")
 *alerts, confirms and dialogs in* ***one.***
 
-v3.3.3
+v3.3.5
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/bonifacepereira)
 
@@ -72,6 +72,12 @@ The `$.alert()` , `$.confirm()` & `$.dialog()` are alias of `jconfirm();`.
 Checkout the [documentation](http://craftpip.github.io/jquery-confirm) for further information.
 
 ## Version changes
+
+(new in 3.3.5) 
+* Fix smooth behavior when height change (broken with PR by [loganm](https://github.com/loganm))
+
+(new in 3.3.4) 
+* Fixed bugs #454 & #453 caused due to previous release
 
 (new in 3.3.3) 
 * Safari height bug fix. PR by [lanre-ade](https://github.com/lanre-ade)
