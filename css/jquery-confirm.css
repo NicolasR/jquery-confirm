@@ -60,6 +60,7 @@ body[class*=jconfirm-no-scroll-] {
 }
 .jconfirm .jconfirm-box-container {
   transition: transform;
+  flex-grow: 1;
 }
 .jconfirm .jconfirm-box-container.jconfirm-no-transition {
   transition: none !important;
